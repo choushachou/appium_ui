@@ -2,6 +2,7 @@
 from lianxi.qidong import appium_desired
 from util.find_elem import FindElement
 import time
+import os
 class ActionMethod():
     def __init__(self):
         self.driver=appium_desired()
@@ -28,8 +29,8 @@ class ActionMethod():
         self.get_element(row,col).click()
 
     #dengdai
-    def sleep_time(self,value=''):
-        if value== '':
+    def sleep_time(self,value=None):
+        if value== None:
             values = 1
         else:
             values = int(value)
@@ -37,3 +38,8 @@ class ActionMethod():
     #关闭appium
     def close_appium(self):
         self.driver.close_app()
+
+    #截图
+    def screen_picture(self,row):
+        file_path = os.path.abspath(os.path.join(os.getcwd(),"..")) + "\\config\\" + "picture\\"+'第'+str(row)+'行' + ".png"
+        self.driver.save_screenshot(file_path)

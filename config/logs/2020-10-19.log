@@ -1,0 +1,35 @@
+2020-10-19 22:19:53,221 keyword_case.py--> run_main 20: INFO --->2
+2020-10-19 22:20:01,060 keyword_case.py--> run_main 20: INFO --->3
+2020-10-19 22:20:05,652 keyword_case.py--> run_main 20: INFO --->4
+2020-10-19 22:20:06,896 keyword_case.py--> run_main 20: INFO --->5
+2020-10-19 22:20:08,172 keyword_case.py--> run_main 20: INFO --->6
+2020-10-19 22:20:12,884 keyword_case.py--> run_main 20: INFO --->7
+2020-10-19 22:20:17,196 keyword_case.py--> run_main 20: INFO --->8
+2020-10-19 22:20:23,812 keyword_case.py--> run_main 20: INFO --->9
+2020-10-19 22:20:25,123 keyword_case.py--> run_main 20: INFO --->10
+2020-10-19 22:20:30,119 keyword_case.py--> run_main 20: INFO --->11
+2020-10-19 22:20:31,332 keyword_case.py--> run_main 20: INFO --->12
+2020-10-19 22:20:31,979 keyword_case.py--> run_main 20: INFO --->13
+2020-10-19 22:20:50,256 keyword_case.py--> run_main 20: INFO --->14
+2020-10-19 22:20:57,891 keyword_case.py--> run_main 20: INFO --->15
+2020-10-19 22:21:02,473 keyword_case.py--> run_main 20: INFO --->16
+2020-10-19 22:21:03,687 keyword_case.py--> run_main 20: INFO --->17
+2020-10-19 22:21:04,967 keyword_case.py--> run_main 20: INFO --->18
+2020-10-19 22:21:09,653 keyword_case.py--> run_main 20: INFO --->19
+2020-10-19 22:21:13,988 keyword_case.py--> run_main 20: INFO --->20
+2020-10-19 22:21:20,887 keyword_case.py--> run_main 20: INFO --->21
+2020-10-19 22:21:22,214 keyword_case.py--> run_main 20: INFO --->22
+2020-10-19 22:21:27,169 keyword_case.py--> run_main 20: INFO --->23
+2020-10-19 22:39:37,907 keyword_case.py--> run_main 20: INFO --->2
+2020-10-19 22:39:52,671 keyword_case.py--> run_main 20: INFO --->3
+2020-10-19 22:41:13,469 keyword_case.py--> run_main 20: INFO --->2
+2020-10-19 22:41:27,525 keyword_case.py--> run_main 20: INFO --->3
+2020-10-19 22:41:38,550 keyword_case.py--> run_main 40: ERROR --->Traceback (most recent call last):
+  File "G:/pythonselenium3lianxi/shuju4/case/keyword_case.py", line 27, in run_main
+    self.run_method(method, i,7,send_value)
+  File "G:/pythonselenium3lianxi/shuju4/case/keyword_case.py", line 59, in run_method
+    result = action.click_element(row,col)
+  File "G:\pythonselenium3lianxi\shuju4\keywordappium\actionMethod.py", line 29, in click_element
+    self.get_element(row,col).click()
+AttributeError: 'NoneType' object has no attribute 'click'
+

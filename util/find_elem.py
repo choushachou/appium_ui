@@ -13,16 +13,16 @@ class FindElement():
         re=[]
         case_lines = self.excel.get_lines()
         if case_lines:
-            for row in range(1, case_lines):
+            for row in range(2, case_lines):
 
-                handle = self.excel.get_col_value(row, self.col)
+                handle = self.excel.get_col_value(row, col)
                 re.append(handle)
         return re
     def get_method_value(self,row,col):
         self.row =row
         self.col = col
         row=int(self.row)
-        handle= self.get_key(self.col)[row-1]
+        handle= self.get_key(col)[row-2]
         by = handle.split(">")[0]
         value = handle.split('>')[1]
         try:
